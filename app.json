@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/index"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#ddcec4",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "MFCQ健康美容管理中心",
+    "backgroundColor": "#CE9156",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh":"true"
+  },
+  "tabBar": {
+    "color": "#C71585",
+    "selectedColor": "#C71585",
+    "backgroundColor": "#ddcec4",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "selectedIconPath": "image/tab/index_select.png",
+        "iconPath": "image/tab/index.png"
+      },
+      {
+        "pagePath": "pages/yuyue/index/index",
+        "text": "预约",
+        "selectedIconPath": "image/tab/yuyue_select.png",
+        "iconPath": "image/tab/yuyue.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "评价",
+        "selectedIconPath": "image/tab/like_select.png",
+        "iconPath": "image/tab/like.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "我的",
+        "selectedIconPath": "image/tab/mine_select.png",
+        "iconPath": "image/tab/mine.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

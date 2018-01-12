@@ -1,0 +1,12 @@
+<view class="banner">
+	<image mode='aspectFill' style="width: 310px; height: 180px; background-color: #eeeeee;" src="../../../image/yuyue/banner1.jpg"></image>
+</view>
+<view class="w yuyue_box">
+	
+	<input id="userName" bindchange="bindChange" placeholder="您的称呼" value="{{userInfo.nickName}}"/>
+	<input id="userPhone" bindchange="bindChange" placeholder="手机号码" maxlength="11" type="number" value="{{userPhone}}"/>
+
+	
+
+	<button type="warn" bindtap="yuyueSubmit" class="mt20">立即预约</button>
+</view>
