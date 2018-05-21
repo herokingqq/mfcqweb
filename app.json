@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/yuyue/index/index",
     "pages/logs/index"
   ],
   "window": {
@@ -9,7 +10,7 @@
     "navigationBarTitleText": "MFCQ健康美容管理中心",
     "backgroundColor": "#CE9156",
     "backgroundTextStyle": "light",
-    "enablePullDownRefresh":"true"
+    "enablePullDownRefresh":true
   },
   "tabBar": {
     "color": "#C71585",

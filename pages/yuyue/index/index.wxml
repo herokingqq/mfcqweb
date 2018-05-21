@@ -1,12 +1,52 @@
-<view class="banner">
-	<image mode='aspectFill' style="width: 310px; height: 180px; background-color: #eeeeee;" src="../../../image/yuyue/banner1.jpg"></image>
+<!--<view class="w yuyue_box">
+  <button class="weui-btn mini-btn" type="primary" size="mini">09:00-11:00</button>
+  <text space="ensp">可预约</text>
 </view>
 <view class="w yuyue_box">
-	
-	<input id="userName" bindchange="bindChange" placeholder="您的称呼" value="{{userInfo.nickName}}"/>
-	<input id="userPhone" bindchange="bindChange" placeholder="手机号码" maxlength="11" type="number" value="{{userPhone}}"/>
+  <button class="weui-btn mini-btn" type="primary" size="mini">11:00-13:00</button>
+  <text space="ensp">可预约</text>
+</view>
+<view class="w yuyue_box justify-content:center;">
+  <button class="weui-btn mini-btn" type="primary" size="mini">13:00-15:00</button>
+  <text space="ensp">可预约</text>
+</view>
+<view class="w yuyue_box">
+  <view>
+    <button class="weui-btn mini-btn" type="warn" size="mini">17:00-19:00</button>
+  </view>
+  <view>
+    <text space="ensp" class='centerfount'>已约满</text>
+  </view>
+</view>
 
-	
 
-	<button type="warn" bindtap="yuyueSubmit" class="mt20">立即预约</button>
+<view class="w yuyue_box">
+  <button type="warn" bindtap="yuyueSubmit" class="mt20">立即预约</button>
+</view>-->
+
+<!--<view>
+  <radio-group>
+    <label class='radio_label' wx:for="{{items}}" wx:for-index="index" wx:for-item="item">
+        <radio class='radio' value="{{index}}">{{item.title}}</radio>
+        <button class="weui-btn mini-btn" type="primary" size="mini">{{item.title}}</button>
+    </label>
+  </radio-group>
+</view>-->
+
+
+<view class='window'>
+   <scroll-view>
+      <view class='rg_view'>
+         <radio-group class='rg' bindchange='radiochange'><!-- 事件绑定 -->
+            <view class="class_r_g" wx:for="{{classes_array}}">
+               <radio id="{{item.name}}" hidden value="{{item.name}}" checked="{{item.checked}}" data-id='item.index'></radio>           
+               <label class="label-2__text" for="{{item.name}}">
+                  <text class='{{item.checked?"checkedt":"normalt"}}'>{{item.name}}</text><!-- 根据每一项的checked属性来切换点击radio中的文本的点击效果 -->
+               </label>
+               <view wx:if="{{item.isOrNotSelect}}"> 可预约 </view>
+               <view wx:if="{{!item.isOrNotSelect}}"> 已约满 </view>
+            </view>
+         </radio-group>
+      </view>
+   </scroll-view>
 </view>
